@@ -5,11 +5,17 @@ import java.util.ArrayList;
 import java.util.List;
 public class Order {
     private LocalDate orderDate;
-    private List<OrderLine> orderLineList;
+    private List<OrderLine> orderLineList = new ArrayList<>();
 
-    public Order(LocalDate localDate){
+    public Order(LocalDate localDate,
+                 String orderLineNum,
+                 double price,
+                 int quantity){
+        this.addOrderLine(orderLineNum,
+                    price,
+                    quantity);
         this.orderDate = localDate;
-        orderLineList = new ArrayList<>();
+
     }
 
     public void addOrderLine(String orderLineNum,

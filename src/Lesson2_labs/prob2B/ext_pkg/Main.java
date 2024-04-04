@@ -7,8 +7,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Create order and populate with orderliness
-        Order order = new Order(LocalDate.now());
+        // Create order and create at least one orderLine
+        Order order = new Order(LocalDate.now(), "MP346753", 4357, 2);
+
+        // Add multiple OrderLines
         order.addOrderLine("PL2874567", 1200, 10);
         order.addOrderLine("ML8473632", 3780, 2);
         System.out.println(order);
