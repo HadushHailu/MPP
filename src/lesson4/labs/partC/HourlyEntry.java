@@ -26,4 +26,13 @@ public class HourlyEntry {
                 ", payDate=" + payDate +
                 '}';
     }
+
+    public double getHourlyWage(){
+        return hourlyWage;
+    }
+
+    public double getHoursPerWeek(){
+        return hoursPerWeek;
+    }
+
 }

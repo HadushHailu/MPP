@@ -15,9 +15,11 @@ public class Hourly extends Employee{
    @Override
    public double calcGrossPay(int year,
                              int month){
-      HourlyEntry target = this.getHourlyEntryFromPayDate(year, month);
-      System.out.println(target);
-      return 9.0;
+       HourlyEntry target = this.getHourlyEntryFromPayDate(year, month);
+       //System.out.println(target);
+       //System.out.println("hourly wage:" + target.getHourlyWage());
+       //System.out.println("hour per week:" + target.getHoursPerWeek());
+       return (target.getHourlyWage() * target.getHoursPerWeek() * 4);
    }
 
    private HourlyEntry getHourlyEntryFromPayDate(int year,
