@@ -1,3 +1,3 @@
 # Lab 3 solutions
 
-## each folder contains solutions of the respective lab problems. A pdf file for explanations and class diagrams are also included on the folder.
+#### each folder contains solutions of the respective lab problems. A pdf file for explanations and class diagrams are also included on the folder.
