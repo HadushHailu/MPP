@@ -16,9 +16,6 @@ public class Hourly extends Employee{
    public double calcGrossPay(int year,
                              int month){
        HourlyEntry target = this.getHourlyEntryFromPayDate(year, month);
-       //System.out.println(target);
-       //System.out.println("hourly wage:" + target.getHourlyWage());
-       //System.out.println("hour per week:" + target.getHoursPerWeek());
        return (target.getHourlyWage() * target.getHoursPerWeek() * 4);
    }
 
