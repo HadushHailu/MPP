@@ -10,8 +10,7 @@ public final class Paycheck {
 
     @Override
     public String toString() {
-        return
-                "  GrossPay: " + grossPay + "\n" +
+        return "  GrossPay: " + grossPay + "\n" +
                 " State: " + grossPay * state + "\n" +
                         " fica: " + grossPay * fica + "\n" +
                         " local: " + grossPay * local + "\n" +
