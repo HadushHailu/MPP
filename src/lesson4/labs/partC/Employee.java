@@ -11,7 +11,7 @@ public abstract class Employee {
     }
 
     public void print(){
-        LocalDate now = LocalDate.now();
+        //LocalDate now = LocalDate.now();
         System.out.println( "EmployeeID: " + empId + "\n" + "Paystub:\n" + calcCompensation(2024, 3));
     }
 
