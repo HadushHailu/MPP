@@ -1,10 +1,10 @@
-package dataaccess;
+package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess;
 
 import java.util.HashMap;
 
-import business.Book;
-import business.LibraryMember;
-import dataaccess.DataAccessFacade.StorageType;
+import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.Book;
+import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.LibraryMember;
+import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess.*;
 
 public interface DataAccess { 
 	public HashMap<String,Book> readBooksMap();

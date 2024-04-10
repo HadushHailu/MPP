@@ -1,4 +1,4 @@
-package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.librarysystem;
+package Library_Management_System.librarysystem;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -15,8 +15,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.ControllerInterface;
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.SystemController;
+import Library_Management_System.business.*;
 
 
 public class LibrarySystem extends JFrame implements LibWindow {

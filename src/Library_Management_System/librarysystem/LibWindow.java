@@ -1,4 +1,4 @@
-package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.librarysystem;
+package Library_Management_System.librarysystem;
 
 public interface LibWindow {
 	void init();

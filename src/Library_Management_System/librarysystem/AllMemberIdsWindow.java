@@ -1,17 +1,16 @@
-package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.librarysystem;
+package Library_Management_System.librarysystem;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.TextArea;
-import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.ControllerInterface;
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.SystemController;
+import Library_Management_System.business.*;
+
 
 
 public class AllMemberIdsWindow extends JFrame implements LibWindow {

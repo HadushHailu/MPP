@@ -1,13 +1,13 @@
-package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business;
+package Library_Management_System.business;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess.Auth;
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess.DataAccess;
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess.DataAccessFacade;
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.dataaccess.User;
+import Library_Management_System.dataaccess.Auth;
+import Library_Management_System.dataaccess.DataAccess;
+import Library_Management_System.dataaccess.DataAccessFacade;
+import Library_Management_System.dataaccess.User;
 
 public class SystemController implements ControllerInterface {
 	public static Auth currentAuth = null;

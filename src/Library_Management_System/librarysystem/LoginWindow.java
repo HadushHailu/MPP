@@ -1,4 +1,4 @@
-package ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.librarysystem;
+package Library_Management_System.librarysystem;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,10 +15,6 @@ import javax.swing.JSeparator;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JOptionPane;
-
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.ControllerInterface;
-
-import ProjectSwing_StartupCode.ProjectSwing_StartupCode.src.business.SystemController;
 
 
 public class LoginWindow extends JFrame implements LibWindow {
