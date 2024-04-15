@@ -18,14 +18,14 @@ public class PersonWithJob extends Person {
 		salary = s;
 	}
 	
-	@Override
-	public boolean equals(Object aPerson) {
-		if(aPerson == null) return false; 
-		if(aPerson.getClass() != this.getClass()) return false;
-		PersonWithJob p = (PersonWithJob)aPerson;
-		boolean isEqual = this.name.equals(p.name);
-		return isEqual;
-	}
+//	@Override
+//	public boolean equals(Object aPerson) {
+//		if(aPerson == null) return false;
+//		if(aPerson.getClass() != this.getClass()) return false;
+//		PersonWithJob p = (PersonWithJob)aPerson;
+//		boolean isEqual = this.name.equals(p.name);
+//		return isEqual;
+//	}
 	
 	public static void main(String[] args) {
 		Person p1 = new PersonWithJob("Joe", 30000);
