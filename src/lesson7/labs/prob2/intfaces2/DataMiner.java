@@ -11,7 +11,7 @@ public class DataMiner {
 		dm.objects.add(new EquilateralTriangle(3));
 		dm.objects.add(new Circle(6));
 		dm.objects.add(new Ellipse(4, 2));
-		System.out.println(dm.computeAveragePerimeter());
+		System.out.println("Computed Average Perimeter is: " + dm.computeAveragePerimeter());
 	}
 	
 	//OO (good) way of performing computation
