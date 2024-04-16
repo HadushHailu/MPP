@@ -170,7 +170,39 @@ public class MyStringListWithIterator implements Iterable<String> {
 		l.forEach(consumer);
 
 	}
+}
 
-	
+class ForeachTest{
+	public static void main(String[] args) {
+		List<Integer> lst=new ArrayList<>();
+		lst.add(4);
+		lst.add(2);
+		lst.add(10);
+		lst.add(1);
+		lst.add(5);
 
+		List<String> lst1=new ArrayList<>();
+		lst1.add("SANJU");
+		lst1.add("SUNAR");
+		lst1.add("IOWA");
+		//System.out.println(lst);
+		//lst.forEach(a-> System.out.println(a));
+//		var obj=new ForeachTest();
+//		var consumer=obj.new TestConsumer();
+//		lst.forEach(consumer);
+
+		lst1.forEach(new Consumer<String>(){
+			@Override
+			public void accept(String val){
+				Integer a=1;
+				System.out.print(val+" ");
+			}
+		});
+	}
+	class TestConsumer implements Consumer<Integer>{
+		@Override
+		public void accept(Integer val) {
+			System.out.print(val+" ");
+		}
+	}
 }

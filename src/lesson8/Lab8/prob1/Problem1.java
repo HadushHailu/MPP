@@ -3,6 +3,7 @@ package lesson8.Lab8.prob1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Problem1 {
 
@@ -10,7 +11,8 @@ public class Problem1 {
 		// To understand functions as First class citizen
 		 List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 		 // Task 1: Identify the suitable interface to read the input and print doubled
-		 changeDouble(numbers /* , Functional Interface implementation*/ );// Output: 2 4 6 8 10
+		 changeDouble(numbers , val-> System.out.print(2*val + " ")
+				 /* , Functional Interface implementation*/ );// Output: 2 4 6 8 10
 	
 		 List<String> data = Arrays.asList("apple", "banana", "cherry");
 	     //Task 2: Take input of String and transform into Upper case   
@@ -21,9 +23,9 @@ public class Problem1 {
 	        printIf(inputs /*, Functional Interface implementation*/);
 	}
 
-	public static void changeDouble(List<Integer> numbers /*,Functional Interface action */) {
+	public static void changeDouble(List<Integer> numbers,Consumer<Integer> action /*,Functional Interface action */) {
         for (Integer number : numbers) {
-            //action.accept(number);
+            action.accept(number);
         }
 	}
 	public static void transformStrings(List<String> list/*,Functional Interface transformer */) {
