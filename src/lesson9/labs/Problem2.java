@@ -11,7 +11,6 @@ public class Problem2 {
 
     public static void Problem2(){
         List<Integer> lst= Arrays.asList(4,7,1,9,45);
-
         Comparator<Integer> comparator=Integer::compare;
 
         int max = lst.stream()
