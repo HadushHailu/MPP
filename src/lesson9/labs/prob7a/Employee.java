@@ -10,6 +10,17 @@ public class Employee {
 		this.lastName = l;
 		this.salary = s;
 	}
+
+//	@Override
+//	public boolean equals(Object o){
+//		if(o==null) return false;
+//		if(o.getClass()!=this.getClass())
+//			return false;
+//
+//		Employee emp=(Employee)o;
+//		return emp.firstName.equals(firstName) &&
+//				emp.lastName.equals(lastName);
+//	}
 	
 	@Override
 	public String toString() {
@@ -47,5 +58,6 @@ public class Employee {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
+
 }
 
