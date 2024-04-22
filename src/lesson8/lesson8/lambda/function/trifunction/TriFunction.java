@@ -1,4 +1,4 @@
-package lesson9.labs.prob7b;
+package lesson8.lecture.lambdaexamples.trifunction;
 
 @FunctionalInterface
 public interface TriFunction<S,T,U,R> {

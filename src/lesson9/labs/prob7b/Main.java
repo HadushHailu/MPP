@@ -15,8 +15,11 @@ public class Main {
 		                  new Employee("Thomas", "Blake", 111000),
 		                  new Employee("Alice", "Richards", 101000),
 		                  new Employee("Donald", "Trump", 100000));
-		
-		
+
+		/*
+		* Pass the required parameters: List, Salary, Character and String for joining
+		* */
+		System.out.println(MyLambdaLib.FilterEmployee.apply(list, 100000, 'N', ","));
 	}
 
 }

@@ -51,20 +51,30 @@ class Human
 }
 
 public class ConstructorReference {
-public static void main(String args[]){
-	Human[] list = { new Human("Joe",35,"Male"), new Human("Jane",45,"Female"), new Human("John",30,"Male")};
-	
-    // Query 1  : Print only Female canditates names
-	
+	public static void main(String args[]){
+		Human[] list = { new Human("Joe",35,"Male"),
+				         new Human("Jane",45,"Female"),
+				         new Human("John",30,"Male")};
 
-    // Query 2 : Cretae an objecy by choosing suitable Interface to the specified constructors(Totally 3 constuctors)using fouth type of Method Reference ClassName::new. Then print the object status 
- 
-	// Query 3 : Count the male candidates whose age is more than 30
-    
-    
-    
-   }
+		// Query 1  : Print only Female canditates names
+		Arrays.stream(list)
+				.filter(human -> human.getGender().equals("Female"))
+				.map(Human::getName)
+				.forEach(System.out::println);
+
+		// Query 2 : Cretae an objecy by choosing suitable Interface to the specified constructors(Totally 3 constuctors)
+		// using fouth type of Method Reference ClassName::new. Then print the object status
+		lesson8.lecture.lambdaexamples.trifunction.TriFunction<String, Integer, String, Human> humanTriFunction =
+				Human::new;
+		Human human = humanTriFunction.apply("Hadush", 1, "Male");
+		System.out.println("Newly created human: " + human);
+
+		// Query 3 : Count the male candidates whose age is more than 30
+        long count = Arrays.stream(list)
+				.filter(x->x.getAge()>30 && x.getGender().equals("Male"))
+				.count();
+		System.out.println("Count of male candidates whose age is more than 30: " + count);
 
 
-
+	   }
 }
