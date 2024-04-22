@@ -18,6 +18,4 @@ public class Group<T> {
 		return "[special : " + specialElement.toString() 
 		    + ", elements :\n   " + elements.toString() + "]";
 	}
-	
-	
 }
